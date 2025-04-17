@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import { Google } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Navbar() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -127,7 +127,7 @@ export function Navbar() {
                 navigate("/dashboard");
               }}
             >
-              <Google className="mr-2 h-4 w-4" />
+              <Mail className="mr-2 h-4 w-4" />
               Entrar com o Google
             </Button>
             

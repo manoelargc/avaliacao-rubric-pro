@@ -8,6 +8,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+import Rubricas from "./pages/Rubricas";
+import CriarRubrica from "./pages/CriarRubrica";
 
 const queryClient = new QueryClient();
 
@@ -35,12 +37,12 @@ const App = () => (
             {/* Rubricas */}
             <Route path="/gerenciador-rubricas" element={
               <PrivateRoute>
-                <Dashboard />
+                <Rubricas />
               </PrivateRoute>
             } />
             <Route path="/criar-rubrica" element={
               <PrivateRoute>
-                <Dashboard />
+                <CriarRubrica />
               </PrivateRoute>
             } />
             

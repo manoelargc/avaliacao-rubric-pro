@@ -2,7 +2,7 @@
 import { AppSidebar } from "@/components/app-sidebar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Plus, Book, Info, ChevronDown, LogOut, Settings } from "lucide-react";
+import { FileText, Plus, Book, Info, ChevronDown, LogOut, Settings, User } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/theme-toggle";

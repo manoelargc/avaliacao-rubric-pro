@@ -56,6 +56,10 @@ export default {
         rubric: {
           blue: "#1E88E5",
           cyan: "#00BCD4",
+          darkbg: "#020817",
+          sidebar: "#101828",
+          card: "#1E293B",
+          accent: "#1584CD",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

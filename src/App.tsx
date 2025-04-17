@@ -15,7 +15,6 @@ import CursoDetalhes from "./pages/CursoDetalhes";
 import DisciplinaAvaliacoes from "./pages/DisciplinaAvaliacoes";
 import Avaliacao from "./pages/Avaliacao";
 import Perfil from "./pages/Perfil";
-import Suporte from "./pages/Suporte";
 
 const queryClient = new QueryClient();
 
@@ -27,7 +26,7 @@ const PrivateRoute = ({ children }: { children: React.ReactNode }) => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="dark">
+    <ThemeProvider defaultTheme="light">
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -89,7 +88,7 @@ const App = () => (
             {/* Suporte */}
             <Route path="/suporte" element={
               <PrivateRoute>
-                <Suporte />
+                <Dashboard />
               </PrivateRoute>
             } />
             

@@ -10,6 +10,11 @@ import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Rubricas from "./pages/Rubricas";
 import CriarRubrica from "./pages/CriarRubrica";
+import Cursos from "./pages/Cursos";
+import CursoDetalhes from "./pages/CursoDetalhes";
+import DisciplinaAvaliacoes from "./pages/DisciplinaAvaliacoes";
+import Avaliacao from "./pages/Avaliacao";
+import Perfil from "./pages/Perfil";
 
 const queryClient = new QueryClient();
 
@@ -49,12 +54,22 @@ const App = () => (
             {/* Cursos e Disciplinas */}
             <Route path="/cursos" element={
               <PrivateRoute>
-                <Dashboard />
+                <Cursos />
               </PrivateRoute>
             } />
             <Route path="/cursos/:cursoId" element={
               <PrivateRoute>
-                <Dashboard />
+                <CursoDetalhes />
+              </PrivateRoute>
+            } />
+            <Route path="/cursos/:cursoId/disciplinas/:disciplinaId/avaliacoes" element={
+              <PrivateRoute>
+                <DisciplinaAvaliacoes />
+              </PrivateRoute>
+            } />
+            <Route path="/cursos/:cursoId/disciplinas/:disciplinaId/avaliacoes/:avaliacaoId" element={
+              <PrivateRoute>
+                <Avaliacao />
               </PrivateRoute>
             } />
             <Route path="/cursos/:cursoId/grupos" element={
@@ -80,7 +95,7 @@ const App = () => (
             {/* Perfil */}
             <Route path="/perfil" element={
               <PrivateRoute>
-                <Dashboard />
+                <Perfil />
               </PrivateRoute>
             } />
             

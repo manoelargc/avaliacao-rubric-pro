@@ -31,32 +31,57 @@ const App = () => (
                 <Dashboard />
               </PrivateRoute>
             } />
-            {/* Outras rotas protegidas */}
+            
+            {/* Rubricas */}
             <Route path="/gerenciador-rubricas" element={
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
             } />
+            <Route path="/criar-rubrica" element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            } />
+            
+            {/* Cursos e Disciplinas */}
             <Route path="/cursos" element={
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
             } />
+            <Route path="/cursos/:cursoId" element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            } />
+            <Route path="/cursos/:cursoId/grupos" element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            } />
+            
+            {/* Modelos */}
             <Route path="/modelos-rubricas" element={
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
             } />
+            
+            {/* Suporte */}
             <Route path="/suporte" element={
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
             } />
+            
+            {/* Perfil */}
             <Route path="/perfil" element={
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
             } />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
